@@ -51,4 +51,6 @@ public class Main {
                 //for each
             System.out.println(fruit);
         }
-}}
+        
+    }
+}
