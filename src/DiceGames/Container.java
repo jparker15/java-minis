@@ -20,7 +20,16 @@ public class Container {
         }
     }
     // single roll die
-    public void roll (Random rand, int choice){}
+    public void roll (Random rand, int choice){
+        dice.get(choice).roll(rand);
+    }
+
+    public void roll (Random rand, List<Integer> choices){
+        for (int choice: choices) {
+//            dice.get(choice).roll(rand);
+            roll(rand,choice);
+        }
+    }
 
 
     @Override
